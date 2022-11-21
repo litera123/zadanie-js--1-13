@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet"> 
+    <script language="JavaScript">
+        function WinOpen() {
+            window.open("menu.html", "okienkoGlowne", "toolbar=no,directories=no,menubar=no,height=400,width=1000,top=700,left=20");
+        }
+
+        function okno_zamknij() {
+            window.close()
+        }
+    </script>
+</head>
+    
+    
+
+<body>
+    <form>
+        <br>
+        <input class="klikacz" type="button" name="przycisk" value=" Naciśnij mnie! " onclick="WinOpen(' ')"><br>
+        <input class="klikacz" type="button" value="Powrót" onClick="location.href='index.html';"/><br>
+        <input class="klikacz" type="button" value="Zamknij okno" onClick="okno_zamknij('')"/>
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <textarea cols="100" rows="50">
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+            <script language="JavaScript">
+                var A_litterski = prompt("Podaj pierwsza liczbe  A= ", );
+                var B_litterski = prompt("Podaj pierwsza liczbe  B= ", );
+                A = parseFloat(A_litterski);
+                B = parseFloat(B_litterski);
+        
+                function A3(a) {
+                    return a*a*a;
+                };
+                function TrzyA2B(a,b) {
+                    return 3*(a*a)*b;
+                };
+                function TrzyAB2(a,b) {
+                    return 3*a*(b*b);
+                };
+                function B3(b){
+                    return b*b*b;
+                }
+                let wynik = A3(A) + TrzyA2B(A,B) + TrzyAB2(A,B) + B3(B);
+                document.write("wczytane liczby to A: "+A+", B:"+B);
+                document.write("<br>");
+                document.write("(A+B)^3 = A^3 + 3A^2B + 3AB^2 + B^3 = ("+A+"+"+B+")^3 = ");
+                document.write(A3(A)+"+"+ TrzyA2B(A,B)+"+"+TrzyAB2(A,B)+"+"+B3(B)+"= " + wynik);
+                
+                
+                
+            </script>
+        
+        <body>
+        
+        </body>
+        
+        </html>
+    </textarea>
+    <br>
+    <input class="klikacz" type="button" value="Powrót" onClick="location.href='index.html';"/><br>
+</body>
+</html>
