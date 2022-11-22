@@ -1,0 +1,34 @@
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ile sekund</title>
+            <style>
+                body{
+                    color: chartreuse;
+                    font-size: 300%;
+                }
+            </style>
+        </head>
+        <body>
+            <script>
+                let D1_Lit = parseInt(prompt(""))
+                let D2_Lit = parseInt(prompt(""))
+                let wynik = 0;
+        
+                if (D1_Lit >= D2_Lit && 1<=D1_Lit && D2_Lit<= 31 &&  1<=D2_Lit && D1_Lit<= 31) {
+                    wynik = (D1_Lit - D2_Lit)*24*3600;
+                    document.write("Między tymi dniami mineło: " + wynik + "s")
+                }
+                
+                else{
+                    
+                    document.write("złe dane")
+                    
+                }
+            </script>
+        </body>
+        </html>
+
+    
